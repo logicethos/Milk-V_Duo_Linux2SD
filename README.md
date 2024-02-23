@@ -9,13 +9,14 @@
 - whiptail (usually already installed)
 
 
+### To Run
 ```
 clone https://github.com/logicethos/Milk-V_Duo_Linux2SD.git
 cd Milk-V_Duo_Linux2SD
 ./run.sh
 ```
 
-### Custom builds
+#### Custom builds
 Copy one of the existing directorys, and edit the files.
 
 ```
