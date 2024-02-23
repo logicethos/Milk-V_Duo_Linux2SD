@@ -1,0 +1,6 @@
+export BOARD=milkv-duo256m-lite
+export CONFIG=cv1812cp_milkv_duo256m_sd
+
+export DISTRO="sid"
+export BASE_URL="http://ftp.debian.org/debian"
+export ROOTPW=${ROOTPW:-milkv}
