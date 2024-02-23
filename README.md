@@ -1,4 +1,4 @@
-# Milk-V Duo Linux Image builder
+# Milk-V Duo Debian/Ubuntu Image builder
 
 - Menu driven selection
 - Writes to SD Card & expands partition
