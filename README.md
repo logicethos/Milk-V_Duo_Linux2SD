@@ -23,3 +23,4 @@ Copy one of the existing directorys, and edit the files.
 ENV - Distro vairables.
 bootstrap.sh - This is run within your new envirment during the build.
 ```
+Make sure `export ROOTFS_SIZE=“1G”` is large enough for your bootstrap.sh needs.
