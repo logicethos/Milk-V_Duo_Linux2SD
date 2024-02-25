@@ -21,7 +21,15 @@ echo "$BOARD $CONFIG"
 cd /duo-buildroot-sdk
 
 #Make sure we have room to work with
-sed -i '/image rootfs.ext4 {/,/}/s/size = .*/size = 1G/' device/$BOARD/genimage.cfg
+
+GENIMAGECFG="device/$BOARD/genimage.cfg"
+cp "$GENIMAGECFG" "${GENIMAGECFG}.bak"
+awk -v size="$ROOTFS_SIZE" '
+BEGIN {OFS=FS=""}
+/image rootfs.ext4/ {flag=1}
+flag && /size =/ {sub(/[0-9]+[MG]/, size); flag=0}
+{print}
+' "${GENIMAGECFG}.bak" > "$GENIMAGECFG"
 
 source device/$BOARD/boardconfig.sh
 source build/milkvsetup.sh

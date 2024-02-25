@@ -4,3 +4,5 @@ export CONFIG=cv1812cp_milkv_duo256m_sd
 export DISTRO="mantic"
 export BASE_URL="http://ports.ubuntu.com/ubuntu-ports"
 export ROOTPW=${ROOTPW:-milkv}
+
+export ROOTFS_SIZE="1G"
