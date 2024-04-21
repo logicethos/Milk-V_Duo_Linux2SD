@@ -1,4 +1,4 @@
-export BOARD=milkv-duo256m-lite
+export BOARD=milkv-duo256m
 export CONFIG=cv1812cp_milkv_duo256m_sd
 
 export DISTRO="mantic"
